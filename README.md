@@ -21,5 +21,5 @@ Se realizó el evento de programación “Maratón de BD”, el día 7 de septie
 De acuerdo a  lo anterior, construya una aplicación Web (solo el Back-End), en el lenguaje de programación que prefiera, con el fin de dar solución al requerimiento de Politécnico.  Tenga en cuenta los datos disponibles en la BD Relacional. Desarrollar el CRUD en la herramienta NoSQL que el equipo elija. 
 
 ## Se evaluará:
-•	Aplicación web (Conectar)
-•	BD NoSQL (realice el modelo de la solución solicitada - CRUD)
+- Aplicación web (Conectar)
+- BD NoSQL (realice el modelo de la solución solicitada - CRUD)
