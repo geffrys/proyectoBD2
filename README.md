@@ -12,6 +12,9 @@ Existe una base de datos relacional, implementada en Postgresql, actualmente con
 
 Se espera que la aplicación tome la información que hay disponible en Postgresql para alimentar la información del sistema de registro de eventos - EventosPoli. Se anexa el script del esquema de la BD.
 
+<!-- import inage -->
+![image](Screenshot%202023-11-21%20103605.png)
+
 Ejemplo de un evento. 
 
 Se realizó el evento de programación “Maratón de BD”, el día 7 de septiembre de 2019, fue organizado por la Facultad de Ingeniería y el programa de Ingeniería Informática, en el P13-211.  Las categorías que se registran son: “programación”, “Maratón BD”.
