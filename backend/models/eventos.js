@@ -1,5 +1,11 @@
 import mongoose from "mongoose";
 
+const participanteSchema = new mongoose.Schema({
+    nombre: String,
+    rol: String, // asistente, facilitador, conferencista
+});
+
+
 const enventoSchema = new mongoose.Schema({
     titulo: {
         type: String,
@@ -22,8 +28,20 @@ const enventoSchema = new mongoose.Schema({
         required: true,
     },
     asistentes: {
-        type: string,
+        type: [participanteSchema],
+        default: []
+    },
+    facultadesOrganizadoras: {
+        type: [String],
+        default: [],
+    },
+    programaOrganizador: {
+        type: String,
         required: true,
+    },
+    comentarios: {
+        type: [String],
+        default: [],
     }
 });
 
