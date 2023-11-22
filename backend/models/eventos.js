@@ -5,7 +5,6 @@ const participanteSchema = new mongoose.Schema({
     rol: String, // asistente, facilitador, conferencista
 });
 
-
 const enventoSchema = new mongoose.Schema({
     titulo: {
         type: String,
