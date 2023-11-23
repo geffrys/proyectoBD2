@@ -31,3 +31,35 @@ De acuerdo a  lo anterior, construya una aplicación Web (solo el Back-End), en 
 # Documentación API
 
 [API-Doc](https://red-sunset-865503.postman.co/workspace/Universidad~310a255d-1378-4326-ab18-ceaa0b3db798/collection/22903412-381f882e-152d-42dd-abd4-1d02687bec8a?action=share&creator=22903412)
+
+# Inicializar API
+
+1. configurar variables de entorno del archivo .env , ver archivo [.env.example](/backend/.env.example)
+
+2. realiza los siguientes comandos en tu terminal
+
+```bash
+    cd Backend 
+
+    npm install
+
+    npm run dev
+```
+
+# Como iniciar contenedor
+
+1. iniciar el contenedor con mongo con el comando
+
+```bash
+    docker-compose up -d
+```
+2. configurar en el archivo .env el connection string
+
+```bash
+    MONGO_URI=mongodb://user:pass@0.0.0.0:port
+```
+3. iniciar contenedor cuando ya esta creado
+
+```bash
+    docker start <containerID>
+```
