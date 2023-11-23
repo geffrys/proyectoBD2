@@ -9,6 +9,7 @@ import empleadoRouter from './empleados.routes.js';
 import areaRouter from './areas.routes.js';
 import programaRouter from './programas.routes.js';
 import sedesRouter from './sedes.routes.js';
+import eventosRouter from './eventos.routes.js';
 
 const router = Router();
 
@@ -22,6 +23,7 @@ router.use('/empleados', empleadoRouter);
 router.use('/areas', areaRouter);
 router.use('/programas', programaRouter);
 router.use('/sedes', sedesRouter);
+router.use('/eventos', eventosRouter);
 
 
 

@@ -1,11 +1,20 @@
-import mongoose from "mongoose";
+import mongoose_pool from '../database/mongoose_pool.js';
+import mongoose from 'mongoose';
 
 const participanteSchema = new mongoose.Schema({
     nombre: String,
     rol: String, // asistente, facilitador, conferencista
 });
 
-const enventoSchema = new mongoose.Schema({
+const comentarioSchema = new mongoose.Schema({
+    comentario: String
+});
+
+const facultadSchema = new mongoose.Schema({
+    nombre: String
+});
+
+const eventoSchema = new mongoose.Schema({
     titulo: {
         type: String,
         required: true
@@ -20,7 +29,7 @@ const enventoSchema = new mongoose.Schema({
     },
     fecha: {
         type: Date,
-        required: true,
+        default: Date.now
     },
     lugar: {
         type: String,
@@ -31,7 +40,7 @@ const enventoSchema = new mongoose.Schema({
         default: []
     },
     facultadesOrganizadoras: {
-        type: [String],
+        type: [facultadSchema],
         default: [],
     },
     programaOrganizador: {
@@ -39,11 +48,11 @@ const enventoSchema = new mongoose.Schema({
         required: true,
     },
     comentarios: {
-        type: [String],
+        type: [comentarioSchema],
         default: [],
     }
 });
 
-const Evento = mongoose.model('Evento', enventoSchema);
+const Evento = mongoose_pool.model('Evento', eventoSchema);
 
 export default Evento;
