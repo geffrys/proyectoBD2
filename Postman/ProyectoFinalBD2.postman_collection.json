@@ -1,0 +1,695 @@
+{
+	"info": {
+		"_postman_id": "381f882e-152d-42dd-abd4-1d02687bec8a",
+		"name": "ProyectoFinalBD2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22903412",
+		"_collection_link": "https://red-sunset-865503.postman.co/workspace/Universidad~310a255d-1378-4326-ab18-ceaa0b3db798/collection/22903412-381f882e-152d-42dd-abd4-1d02687bec8a?action=share&source=collection_link&creator=22903412"
+	},
+	"item": [
+		{
+			"name": "postgres",
+			"item": [
+				{
+					"name": "getPaises",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/paises",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"paises"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postPaises",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 2,\r\n\t\"nombre\": \"Alemania\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/paises",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"paises"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDepartamentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/departamentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"departamentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postDepartamento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 1,\r\n\t\"nombre\": \"Antioquia\",\r\n\t\"codigo_pais\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/departamentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"departamentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCiudades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ciudades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ciudades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postCiudades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 1,\r\n\t\"nombre\": \"Medellín\",\r\n\t\"codigo_departamento\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ciudades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ciudades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSedes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/sedes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"sedes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postSedes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 1,\r\n\t\"nombre\": \"Sede Medellín\",\r\n\t\"codigo_ciudad\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/sedes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"sedes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTipoContratacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tiposContrataciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tiposContrataciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postTipoContratacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"nombre\": \"indefinido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tiposContrataciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tiposContrataciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTipoEmpleado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tiposEmpleados",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tiposEmpleados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postTipoEmpleado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"nombre\": \"Decano\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tiposEmpleados",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tiposEmpleados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFacultades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/facultades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"facultades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postFacultades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 1,\r\n\t\"nombre\": \"Ingeniería\",\r\n\t\"ubicacion\": \"p13\",\r\n\t\"nro_telefono\": \"4444444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/facultades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"facultades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAreas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/areas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"areas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postArea",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 1,\r\n\t\"nombre\": \"Humanas\",\r\n\t\"facultades_codigo\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/areas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"areas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProgramas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/programas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"programas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postProgramas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"codigo\": 1,\r\n\t\"nombre\": \"Informatica\",\r\n\t\"areas_codigo\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/programas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"programas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEmpleados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/empleados",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"empleados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEmpleadosById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/empleados/1152",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"empleados",
+								"1152"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postEmpleados",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"identificacion\": \"1152\",\r\n\t\"nombres\": \"Francisco\",\r\n\t\"apellidos\": \"Pachuca\",\r\n\t\"email\": \"pacho@elpoli.edu.co\",\r\n\t\"tipo_contratacion\": \"indefinido\",\r\n\t\"tipo_empleado\": \"Decano\",\r\n\t\"cod_facultad\": 1,\r\n\t\"cod_sede\": 1,\r\n\t\"lugar_nacimiento\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/empleados",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"empleados"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mongodb",
+			"item": [
+				{
+					"name": "getEventos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/eventos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"eventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postEvento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"titulo\": \"Maraton de base de datos 3.\",\r\n\t\"descripcion\": \"Maraton para la materia base de datos\",\r\n\t\"categorias\": \"Categoria\",\r\n\t\"lugar\": 1,\r\n\t\"asistentes\":[{\r\n\t\t\"nombre\": \"Francisco Pachuca\",\r\n\t\t\"rol\": \"Facilitador\"\r\n\t}],\r\n\t\"facultadesOrganizadoras\":[{\r\n\t\t\"nombre\": \"Ingenieria\"\r\n\t}],\r\n\t\"programaOrganizador\": \"Informatica\",\r\n\t\"comentarios\": [{\r\n\t\t\"comentario\": \"Muy bueno\"\r\n\t}],\r\n\t\"fecha\": \"2023-11-24\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/eventos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"eventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEvento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/eventos/655f9a62a601c25e55476cea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"eventos",
+								"655f9a62a601c25e55476cea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEventoTodos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"titulo\": \"ExpoIngenieria\",\r\n\t\"descripcion\": \"Un evento de expo ingenierias ensayo update\", \r\n\t\"categorias\": \"Investigacion\", \r\n\t\"fecha\": \"2023-11-26 18:31:00\", \r\n\t\"lugar\": \"p40\", \r\n\t\"asistentes\": [\r\n\t\t{\r\n\t\t\t\"nombre\": \"Geffry\",\r\n\t\t\t\"rol\": \"asistente\"\r\n\t\t}\r\n\t], \r\n\t\"facultadesOrganizadoras\": [\r\n\t\t{\r\n\t\t\t\"nombre\": \"Educación fisica\"\r\n\t\t}\r\n\t], \r\n\t\"programaOrganizador\": \"Ingenieria\", \r\n\t\"comentarios\": [\r\n\t\t{\r\n\t\t\t\"comentario\": \"etcelent\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/eventos/655f9a62a601c25e55476cea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"eventos",
+								"655f9a62a601c25e55476cea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEvento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"titulo\": \"Ex\",\r\n\t\"lugar\": \"p403\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/eventos/655f9a62a601c25e55476cea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"eventos",
+								"655f9a62a601c25e55476cea"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

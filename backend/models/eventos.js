@@ -1,13 +1,36 @@
 import mongoose_pool from '../database/mongoose_pool.js';
 import mongoose from 'mongoose';
 
-const participanteSchema = new mongoose.Schema({
+const departamentoSchema = new mongoose.Schema({
     nombre: String,
+    pais: String,
+});
+
+const ciudadSchema = new mongoose.Schema({
+    nombre: String,
+    departamento: departamentoSchema
+}); 
+
+const participanteSchema = new mongoose.Schema({
+    identificacion: String,
+    nombreUsuario: String,
+    nombre: String,
+    relacioninstitucion: String,
+    email: String,
+    ciudad: ciudadSchema,
     rol: String, // asistente, facilitador, conferencista
 });
 
+
 const comentarioSchema = new mongoose.Schema({
-    comentario: String
+    comentario: String,
+    usuario: String,
+});
+
+const lugarSchema = new mongoose.Schema({
+    nombre: String,
+    direccion: String,
+    ciudad: ciudadSchema
 });
 
 const facultadSchema = new mongoose.Schema({
@@ -32,7 +55,7 @@ const eventoSchema = new mongoose.Schema({
         default: Date.now
     },
     lugar: {
-        type: String,
+        type: lugarSchema,
         required: true,
     },
     asistentes: {

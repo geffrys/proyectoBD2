@@ -19,11 +19,14 @@ Ejemplo de un evento.
 
 Se realizó el evento de programación “Maratón de BD”, el día 7 de septiembre de 2019, fue organizado por la Facultad de Ingeniería y el programa de Ingeniería Informática, en el P13-211.  Las categorías que se registran son: “programación”, “Maratón BD”.
 
+
 ## Actividad a realizar:
 
 De acuerdo a  lo anterior, construya una aplicación Web (solo el Back-End), en el lenguaje de programación que prefiera, con el fin de dar solución al requerimiento de Politécnico.  Tenga en cuenta los datos disponibles en la BD Relacional. Desarrollar el CRUD en la herramienta NoSQL que el equipo elija. 
 
+
 ## Se evaluará:
+
 - Aplicación web (Conectar)
 - BD NoSQL (realice el modelo de la solución solicitada - CRUD)
 
@@ -31,6 +34,7 @@ De acuerdo a  lo anterior, construya una aplicación Web (solo el Back-End), en 
 # Documentación API
 
 [API-Doc](https://red-sunset-865503.postman.co/workspace/Universidad~310a255d-1378-4326-ab18-ceaa0b3db798/collection/22903412-381f882e-152d-42dd-abd4-1d02687bec8a?action=share&creator=22903412)
+
 
 # Inicializar API
 
@@ -45,6 +49,7 @@ De acuerdo a  lo anterior, construya una aplicación Web (solo el Back-End), en 
 
     npm run dev
 ```
+
 
 # Como iniciar contenedor
 
@@ -63,3 +68,7 @@ De acuerdo a  lo anterior, construya una aplicación Web (solo el Back-End), en 
 ```bash
     docker start <containerID>
 ```
+
+# Pasos para inicializar programa
+
+1. Iniciar contenedor [docker]("#Como iniciar contenedor")
