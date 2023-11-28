@@ -11,6 +11,7 @@ function App() {
     rol: string;
   }
   // const ciudades = useFetch('http://localhost:3000/api/v1/ciudades');
+  const roles = ['',]
 
   const { register, handleSubmit } = useForm();
   const [asistentes, setAsistentes] = useState<object>([]);
