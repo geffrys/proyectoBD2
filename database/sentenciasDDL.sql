@@ -153,3 +153,14 @@ INNER JOIN departamentos ON ciudades.codigo_departamento = departamentos.codigo
 INNER JOIN paises ON departamentos.codigo_pais = paises.codigo 
 INNER JOIN areas ON facultades.codigo = areas.facultades_codigo
 INNER JOIN programas ON areas.codigo = programas.areas_codigo;
+
+
+SELECT empleados.identificacion, empleados.nombres || ' ' || empleados.apellidos , 
+empleados.email, empleados.tipos_empleado as relacioninstitucion, ciudades.nombre as ciudad, sedes.nombre as sede,
+departamentos.nombre as departamento, paises.nombre as pais
+FROM empleados 
+INNER JOIN sedes ON sedes.codigo = empleados.codigo_sede
+INNER JOIN ciudades ON ciudades.codigo = empleados.lugar_nacimiento
+INNER JOIN departamentos ON ciudades.codigo_departamento = departamentos.codigo
+INNER JOIN paises ON departamentos.codigo_pais = paises.codigo
+WHERE identificacion like '${asistente.identificacion}';
