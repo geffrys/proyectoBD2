@@ -47,7 +47,7 @@ const eventoSchema = new mongoose.Schema({
         required: true,
     },
     categorias: {
-        type: String,
+        type: [String],
         required: true,
     },
     fecha: {

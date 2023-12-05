@@ -582,7 +582,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"titulo\": \"Maraton de base de datos 4.\",\r\n\t\"descripcion\": \"Maraton para la materia base de datos\",\r\n\t\"categorias\": \"Categoria\",\r\n\t\"lugar\": {\r\n\t\t\"nombre\": \"P40\",\r\n\t\t\"direccion\": \"Cll 10\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"Medellín\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\t\"asistentes\":[{\r\n\t\t\"identificacion\": \"1152\",\r\n\t\t\"nombreUsuario\": \"gospina\",\r\n\t\t\"nombre\": \"Geffry Alejandro Ospina Atehortúa\",\r\n\t\t\"relacioninstitucion\": \"Estudiante\",\r\n\t\t\"email\": \"geffry.ospina@gmail.com\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"Medellín\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t},{\r\n\t\t\"identificacion\": \"11\",\r\n\t\t\"nombreUsuario\": \"JOLERAMIR\",\r\n\t\t\"nombre\": \"Jose Leonardo Ramirez\",\r\n\t\t\"relacioninstitucion\": \"ADMINISTRATIVO\",\r\n\t\t\"email\": \"JOSERAMIREZ@ELPOLI.EDU.CO\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t}],\r\n\t\"facultadesOrganizadoras\":[{\r\n\t\t\"nombre\": \"Ingenieria\"\r\n\t}],\r\n\t\"programaOrganizador\": \"Informatica\",\r\n\t\"comentarios\": [{\r\n\t\t\"comentario\": \"Muy bueno\",\r\n\t\t\"usuario\": \"JOLERAMIR\"\r\n\t}],\r\n\t\"fecha\": \"2023-11-24\"\r\n\r\n}",
+							"raw": "{\r\n\t\"titulo\": \"Maraton de base de datos 4.\",\r\n\t\"descripcion\": \"Maraton para la materia base de datos\",\r\n\t\"categorias\": [\"Categoria\", \"db\", \"bases de datos\"],\r\n\t\"lugar\": {\r\n\t\t\"nombre\": \"P40\",\r\n\t\t\"direccion\": \"Cll 10\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\t\"asistentes\":[{\r\n\t\t\"identificacion\": \"1152\",\r\n\t\t\"nombreUsuario\": \"gospina\",\r\n\t\t\"nombre\": \"Geffry Alejandro Ospina Atehortúa\",\r\n\t\t\"relacioninstitucion\": \"Estudiante\",\r\n\t\t\"email\": \"geffry.ospina@gmail.com\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t},{\r\n\t\t\"identificacion\": \"11\",\r\n\t\t\"nombreUsuario\": \"JOLERAMIR\",\r\n\t\t\"nombre\": \"Jose Leonardo Ramirez\",\r\n\t\t\"relacioninstitucion\": \"ADMINISTRATIVO\",\r\n\t\t\"email\": \"JOSERAMIREZ@ELPOLI.EDU.CO\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t}],\r\n\t\"facultadesOrganizadoras\":[{\r\n\t\t\"nombre\": \"INGENIERIA\"\r\n\t}],\r\n\t\"programaOrganizador\": \"INGENIERIA INFORMATICA\",\r\n\t\"comentarios\": [{\r\n\t\t\"comentario\": \"Muy bueno\",\r\n\t\t\"usuario\": \"JOLERAMIR\"\r\n\t}],\r\n\t\"fecha\": \"2023-11-24\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -611,7 +611,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/v1/eventos/655f9a62a601c25e55476cea",
+							"raw": "http://localhost:3000/api/v1/eventos/656684317e55255d9e632a52",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -621,7 +621,7 @@
 								"api",
 								"v1",
 								"eventos",
-								"655f9a62a601c25e55476cea"
+								"656684317e55255d9e632a52"
 							]
 						}
 					},
@@ -634,7 +634,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"titulo\": \"ExpoIngenieria\",\r\n\t\"descripcion\": \"Un evento de expo ingenierias ensayo update\", \r\n\t\"categorias\": \"Investigacion\", \r\n\t\"fecha\": \"2023-11-26 18:31:00\", \r\n\t\"lugar\": \"p40\", \r\n\t\"asistentes\": [\r\n\t\t{\r\n\t\t\t\"nombre\": \"Geffry\",\r\n\t\t\t\"rol\": \"asistente\"\r\n\t\t}\r\n\t], \r\n\t\"facultadesOrganizadoras\": [\r\n\t\t{\r\n\t\t\t\"nombre\": \"Educación fisica\"\r\n\t\t}\r\n\t], \r\n\t\"programaOrganizador\": \"Ingenieria\", \r\n\t\"comentarios\": [\r\n\t\t{\r\n\t\t\t\"comentario\": \"etcelent\"\r\n\t\t}\r\n\t]\r\n}",
+							"raw": "{\r\n\t\"titulo\": \"Maraton de base de datos 4.\",\r\n\t\"descripcion\": \"Maraton para la materia base de datos\",\r\n\t\"categorias\": [\"Categoria\"],\r\n\t\"lugar\": {\r\n\t\t\"nombre\": \"P40\",\r\n\t\t\"direccion\": \"Cll 10\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\t\"asistentes\":[{\r\n\t\t\"identificacion\": \"1152\",\r\n\t\t\"nombreUsuario\": \"gospina\",\r\n\t\t\"nombre\": \"Geffry Alejandro Ospina Atehortúa\",\r\n\t\t\"relacioninstitucion\": \"Estudiante\",\r\n\t\t\"email\": \"geffry.ospina@gmail.com\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t},{\r\n\t\t\"identificacion\": \"11\",\r\n\t\t\"nombreUsuario\": \"JOLERAMIR\",\r\n\t\t\"nombre\": \"Jose Leonardo Ramirez\",\r\n\t\t\"relacioninstitucion\": \"ADMINISTRATIVO\",\r\n\t\t\"email\": \"JOSERAMIREZ@ELPOLI.EDU.CO\",\r\n\t\t\"ciudad\": {\r\n\t\t\t\"nombre\": \"MEDELLIN\",\r\n\t\t\t\"departamento\": {\r\n\t\t\t\t\"nombre\": \"Antioquia\",\r\n\t\t\t\t\"pais\": \"Colombia\"\r\n\t\t\t}\r\n\t\t}\r\n\t}],\r\n\t\"facultadesOrganizadoras\":[{\r\n\t\t\"nombre\": \"INGENIERIA\"\r\n\t}],\r\n\t\"programaOrganizador\": \"INGENIERIA INFORMATICA\",\r\n\t\"comentarios\": [{\r\n\t\t\"comentario\": \"Muy bueno\",\r\n\t\t\"usuario\": \"JOLERAMIR\"\r\n\t}],\r\n\t\"fecha\": \"2023-11-24\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -642,7 +642,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/eventos/655f9a62a601c25e55476cea",
+							"raw": "http://localhost:3000/api/v1/eventos/656684317e55255d9e632a52",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -652,7 +652,7 @@
 								"api",
 								"v1",
 								"eventos",
-								"655f9a62a601c25e55476cea"
+								"656684317e55255d9e632a52"
 							]
 						}
 					},
@@ -684,6 +684,28 @@
 								"v1",
 								"eventos",
 								"655f9a62a601c25e55476cea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEvento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/eventos/656e9b866507019a1cb440af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"eventos",
+								"656e9b866507019a1cb440af"
 							]
 						}
 					},
